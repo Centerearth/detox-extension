@@ -1,0 +1,32 @@
+#detox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  background: radial-gradient(ellipse at center, #1c1c1c 0%, #000000 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+#detox-overlay::before {
+  content: "Wait";
+}
+
+#detox-timer {
+  font-size: 10vw;
+  line-height: 1;
+}
+
+#detox-close-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 1.5vw;
+  background-color: #685f5f;
+  cursor: pointer;
+}
